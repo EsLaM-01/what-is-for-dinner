@@ -56,7 +56,7 @@ var recipes = [
     name: "Margherita Pizza",
     category: "Italian",
     level: "Medium",
-    image: "images/pizza.png",
+    image: "images/pizza.avif",
     rating: 4.8,
     reviews: 421,
     description: "Classic Italian pizza with mozzarella and basil",
