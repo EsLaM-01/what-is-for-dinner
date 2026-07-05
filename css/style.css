@@ -1,0 +1,156 @@
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #ffdbd3 transparent;
+}
+body {
+  background-color: #fefce8;
+}
+.navbar-collapse ul {
+  position: static !important;
+  width: auto !important;
+  box-shadow: none !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+:root {
+  --bg-orangr-g: linear-gradient(to right, #ff6900 50%, #e7000b);
+  --color-orange-100: #ff6900;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+.fs-14 {
+  font-size: 0.875rem;
+}
+.fs-20 {
+  font-size: 1.25rem;
+}
+.fs-25 {
+  font-size: 1.5rem;
+}
+.text-hover:hover {
+  color: var(--color-orange-100) !important;
+  cursor: pointer;
+}
+.cursor {
+  cursor: pointer;
+}
+.bg-hover:hover {
+  background-color: #fed6a7 !important;
+}
+.circle-40 {
+  width: 40px;
+  height: 40px;
+}
+.bg-orange-100 {
+  background-color: #ffecd4;
+}
+.color-orange-100 {
+  color: var(--color-orange-100);
+}
+.circle {
+  width: 50px;
+  height: 50px;
+}
+.bg-orangr-g {
+  background: var(--bg-orangr-g) !important;
+}
+nav a:hover i {
+  color: var(--color-orange-100) !important;
+}
+.bottom-51 {
+  bottom: 20px;
+}
+.h76 {
+  height: 75px;
+}
+.pt-6 {
+  margin-top: 100px;
+}
+/* .card-height {
+  min-height: 700px;
+} */
+.card-a {
+  min-height: 700px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus,
+.nav-link:focus-visible {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.nav-link:focus-visible {
+  box-shadow: transparent !important;
+}
+.nav-tabs .nav-link:hover {
+  border-color: transparent !important;
+  color: rgb(49, 49, 49) !important;
+}
+.nav-tabs .nav-link:active,
+.nav-tabs .nav-link:focus {
+  color: var(--color-orange-100) !important;
+  border-bottom: 2px solid var(--color-orange-100) !important;
+}
+.circle-10 {
+  width: 20px;
+  height: 20px;
+}
+button.btn-sub {
+  transition: all 0.3s;
+}
+.btn-sub i {
+  transition: all 1s;
+}
+.btn-sub:hover {
+  scale: 1.1;
+}
+.btn-sub:hover i {
+  rotate: 180deg;
+}
+
+/* Desktop */
+
+@media (min-width: 992px) {
+  .card-a {
+    height: 75vh;
+  }
+
+  .image-side {
+    height: 100%;
+  }
+  .pt-6 {
+    margin-top: 100px;
+  }
+  .image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content-side {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .h-500 {
+    height: 300px !important;
+  }
+  .fs-13 {
+    font-size: 0.7rem;
+  }
+  .fa-xl {
+    font-size: 0.99rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem;
+  }
+}

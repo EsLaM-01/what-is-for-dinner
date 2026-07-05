@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>What's For Dinner</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- start nav -->
+        <nav class="navbar navbar-expand-lg fixed-top py-3 bg-light shadow border-bottom h76  ">
+            <div class="container menu">
+                <div class="logo d-flex align-items-center gap-3">
+                    <div class="icon-logo">
+                        <span
+                            class="bg-orangr-g rounded-circle circle d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-utensils text-light fs-20"></i>
+                        </span>
+                    </div>
+                    <div class="mb-2">
+                        <span class="title-logo text-dark fs-4 fw-bold m-0 p-0">
+                            What's For Dinner
+                        </span>
+                        <p class="fa-sm p-0 mt-1 ">Your daily meal inspiration</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler text-hover border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="color-light">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end vh-90" id="navbarSupportedContent">
+                    <ul
+                        class="navbar-nav fw-medium bg-light position-absolute shadow start-0 w-100 top-75 py-3 ps-2 py-lg-0 ps-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-hover " href="#">
+                                <i class="fa-solid fa-bookmark text-dark fs-20  nav-link"></i>
+                                <span class="d-inline d-lg-none ms-2"> Saved Recipes</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-hover " href="#">
+                                <i class="fa-solid fa-clock-rotate-left text-dark fs-20  nav-link"></i>
+                                <span class="d-inline d-lg-none ms-2"> Recent</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-hover " href="#">
+                                <i class="fa-solid fa-gear text-dark fs-20  nav-link"></i>
+                                <span class="d-inline d-lg-none ms-2"> Settings</span></a>
+                        </li>
+                        <li class="nav-item p-0 p-lg-1 ms-2 ms-md-0 ps-lg-3">
+                            <div class=" d-flex align-items-center cursor">
+                                <div
+                                    class="bg-orangr-g rounded-circle circle-40 d-flex align-items-center justify-content-center border border-2 border-danger ">
+                                    <img src="images/avatar-2.jpg" alt="Profile"
+                                        class="rounded-circle border-5 border-danger">
+                                </div>
+                                <div class=""><span class="d-inline d-lg-none ms-2 text-hover"> Profile</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end nav -->
+    </header>
+    <!-- main contant -->
+    <main class="">
+        <div class="container ">
+            <div class="card shadow rounded-4 overflow-auto card-a pt-6 ">
+                <div class="row g-0 h-100">
+                    <!-- left card -->
+                    <div class="col-12 col-xl-5 col-xxl-4 image-side position-relative">
+                        <img src="images/food1.avif" class="w-100 h-100 object-fit-cover h-500" alt="foods"
+                            id="imgRecipe">
+                        <div class="position-absolute bottom-0 start-0 end-0  p-1 p-md-3 ">
+                            <div class="bg-white rounded-4 p-1 p-lg-3 shadow">
+                                <div class="row text-center">
+                                    <div class="col d-flex flex-column justify-content-center align-items-center">
+                                        <span class="m-0 p-0">
+                                            <i class="fa-solid fa-clock color-orange-100 fa-xl  "></i></span>
+                                        <span class="text-secondary m-0 p-0 fs-14">Prep Time</span>
+                                        <p class="fw-bold m-0 p-0" id="prepTime">20 min</p>
+                                    </div>
+                                    <div class="col d-flex flex-column justify-content-center align-items-center">
+                                        <span class="m-0 p-0">
+                                            <i class="fa-solid fa-fire-burner text-danger fa-xl "></i></span>
+                                        <span class="text-secondary m-0 p-0 fs-14">Cook Time</span>
+                                        <p class="fw-bold m-0 p-0" id="cookTime">100 min</p>
+                                    </div>
+                                    <div class="col d-flex flex-column justify-content-center align-items-center">
+                                        <span class="m-0 p-0">
+                                            <i class="fa-solid fa-users text-primary fa-xl "></i></span>
+                                        <span class="text-secondary m-0 p-0 fs-14">Servings</span>
+                                        <p class="fw-bold m-0 p-0" id="servings">9 pepole</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 start-0 p-3" id="reviews">
+                            <div class="badge rounded-pill bg-light text-dark p-3 d-flex gap-2 fs-6 align-items-center">
+                                <i class="fa-solid fa-star text-warning "></i>
+                                <p class=" m-0 ">4.5</p>
+                                <p class=" m-0 text-secondary fw-normal ">(156 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right card -->
+                    <div class="col-12 col-xl-7 col-xxl-8 h-100 position-relative d-flex flex-column  ">
+                        <div class="px-4 mt-4">
+                            <div class="" id="labels">
+                                <div class="badge bg-success bg-opacity-25 text-success fw-medium">
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="badge bg-primary bg-opacity-25 text-primary fw-medium"><span>Italian</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h2 class="fw-bold mt-2" id="recipeName">Vegetable Curry</h2>
+                                <div class="d-flex gap-2">
+                                    <span
+                                        class="d-flex align-items-center justify-content-center bg-orange-100 bg-hover cursor circle-40 rounded-3">
+                                        <i class="fa-solid fa-bookmark color-orange-100"></i>
+                                    </span>
+                                    <span
+                                        class="d-flex align-items-center justify-content-center bg-orange-100 bg-hover cursor circle-40 rounded-3">
+                                        <i class="fa-solid fa-share-alt color-orange-100"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="text-secondary" id="recipeDescription">
+                                Hearty vegetarian curry with coconut milk
+                            </p>
+                        </div>
+                        <div class="" id="showAlert">
+                            <div class=" border-bottom d-none">
+                                <div
+                                    class=" d-flex align-items-center gap-3 bg-opacity-10 border-start border-4 border-danger p-4 rounded-3">
+                                    <span class=""><i
+                                            class="fa-solid fa-triangle-exclamation fs-20 text-danger"></i></span>
+                                    <div class="">
+                                        <p class=" mb-1 fw-bold text-danger">Extended Preparation Time</p>
+                                        <p class=" mb-1 text-danger">This recipe requires more than 45
+                                            minutes to prepare.
+                                            Plan
+                                            accordingly!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" px-4 overflow-auto">
+                            <ul class="nav nav-tabs pb-2 ms-0 justify-content-around" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link active text-secondary fw-semibold position-relative overflow-hidden fs-13"
+                                        id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+                                        role="tab" aria-controls="home-tab-pane" aria-selected="true"> <i
+                                            class="fa-solid fa-list-check fa-1 me-2"></i>Ingredients</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link text-secondary fw-semibold position-relative overflow-hidden fs-13"
+                                        id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                                        type="button" role="tab" aria-controls="profile-tab-pane"
+                                        aria-selected="false"><i
+                                            class="fa-solid fa-book-open fa-1 me-2"></i>Instructions</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link text-secondary fw-semibold position-relative overflow-hidden fs-13"
+                                        id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                                        type="button" role="tab" aria-controls="contact-tab-pane"
+                                        aria-selected="false"><i
+                                            class="fa-solid fa-chart-pie me-2"></i>Nutrition</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link text-secondary fw-semibold position-relative overflow-hidden fs-13"
+                                        id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-s"
+                                        type="button" role="tab" aria-controls="contact-tab-s" aria-selected="false"><i
+                                            class="fa-solid fa-lightbulb me-2"></i>Chef's Tips</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                    aria-labelledby="home-tab" tabindex="0">
+                                    <div class="bg-orange-100 rounded-4 my-3 p-3">
+                                        <ul class="list-unstyled " id="listIngredients">
+                                            <li class=" d-flex gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <span class="text-light">1</span>
+                                                </span>4 large onions, thinly sliced
+                                            </li>
+                                            <li class=" d-flex gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <span class="text-light">2</span>
+                                                </span>4 tablespoons butter
+                                            </li>
+                                            <li class=" d-flex gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <span class="text-light">3</span>
+                                                </span>4 tablespoons butter
+                                            </li>
+                                            <li class=" d-flex gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <span class="text-light">4</span>
+                                                </span>1/2 cup white wine
+                                            </li>
+                                            <li class=" d-flex gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <span class="text-light">5</span>
+                                                </span>2 bay leaves
+                                            </li>
+                                            <li class=" d-flex gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <span class="text-light">6</span>
+                                                </span>Fresh thyme
+                                            </li>
+                                            <li class=" d-flex gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <span class="text-light">7</span>
+                                                </span>Baguette slices
+                                            </li>
+                                            <li class=" d-flex gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <span class="text-light">8</span>
+                                                </span>200g Gruyère cheese, grated
+                                            </li>
+                                            <li class=" d-flex gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <span class="text-light">9</span>
+                                                </span>Potatoes
+                                            </li>
+
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                    aria-labelledby="profile-tab" tabindex="0">
+                                    <div class="bg-secondary bg-opacity-10 rounded-4 p-3 my-3">
+                                        <ul class="list-unstyled " id="listInstructions">
+                                            <li class=" d-flex align-items-center gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-40 rounded-4 d-flex align-items-center justify-content-center">
+                                                    <span class="text-light fw-bold">1</span>
+                                                </span>Melt butter in a large pot. Add onions and cook slowly for 40
+                                                minutes, stirring occasionally until caramelized.
+                                            </li>
+                                            <li class=" d-flex align-items-center  gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-40 rounded-4 d-flex align-items-center justify-content-center">
+                                                    <span class="text-light fw-bold">2</span>
+                                                </span>Add white wine and deglaze the pot, scraping up brown bits.
+                                            </li>
+                                            <li class=" d-flex align-items-center  gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-40 rounded-4 d-flex align-items-center justify-content-center">
+                                                    <span class="text-light fw-bold">3</span>
+                                                </span>Pour in beef broth, add bay leaves and thyme. Simmer for 20
+                                                minutes.
+                                            </li>
+                                            <li class=" d-flex align-items-center  gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-40 rounded-4 d-flex align-items-center justify-content-center">
+                                                    <span class="text-light fw-bold">4</span>
+                                                </span>Meanwhile, toast baguette slices until golden.
+                                            </li>
+                                            <li class=" d-flex align-items-center  gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-40 rounded-4 d-flex align-items-center justify-content-center">
+                                                    <span class="text-light fw-bold">5</span>
+                                                </span>Ladle soup into oven-safe bowls. Top with toasted bread and
+                                                cheese.
+                                            </li>
+                                            <li class=" d-flex align-items-center  gap-2 p-2"> <span
+                                                    class="p-1 bg-orangr-g circle-40 rounded-4 d-flex align-items-center justify-content-center">
+                                                    <span class="text-light fw-bold">6</span>
+                                                </span>Broil for 3-5 minutes until cheese is melted and bubbly. Serve
+                                                hot.
+                                            </li>
+
+
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                    aria-labelledby="contact-tab" tabindex="0">
+
+                                    <div class="py-3" id="nutrition">
+                                        <div class="row g-3">
+                                            <div class="col-12 col-md-6">
+                                                <div
+                                                    class="bg-secondary bg-opacity-10 rounded-3 px-3 py-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <span
+                                                            class="d-flex align-items-center justify-content-center bg-orange-100 circle-40 rounded-4">
+                                                            <i class="fa-solid fa-fire color-orange-100"></i>
+                                                        </span>
+                                                        <p class="m-0 ms-2 fw-semibold text-dark">Calories</p>
+                                                    </div>
+                                                    <div class="" id="calories">
+                                                        <h3 class="fw-bold fs-5 m-0">580 kcal</h3>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div
+                                                    class="bg-secondary bg-opacity-10 rounded-3 px-3 py-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <span
+                                                            class="d-flex align-items-center justify-content-center bg-primary bg-opacity-10 circle-40 rounded-4">
+                                                            <i class="fa-solid fa-dumbbell text-primary"></i>
+                                                        </span>
+                                                        <p class="m-0 ms-2 fw-semibold text-dark">Protein</p>
+                                                    </div>
+                                                    <div class="" id="protein">
+                                                        <h3 class="fw-bold fs-5 m-0">36g</h3>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div
+                                                    class="bg-secondary bg-opacity-10 rounded-3 px-3 py-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <span
+                                                            class="d-flex align-items-center justify-content-center bg-warning bg-opacity-25 circle-40 rounded-4">
+                                                            <i class="fa-solid fa-wheat-awn text-warning"></i>
+                                                        </span>
+                                                        <p class="m-0 ms-2 fw-semibold text-dark">Carbohydrates</p>
+                                                    </div>
+                                                    <div class="" id="carbohydrates">
+                                                        <h3 class="fw-bold fs-5 m-0">32g</h3>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div
+                                                    class="bg-secondary bg-opacity-10 rounded-3 px-3 py-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <span
+                                                            class="d-flex align-items-center justify-content-center bg-danger bg-opacity-10 circle-40 rounded-4">
+                                                            <i class="fa-solid fa-droplet text-danger"></i>
+                                                        </span>
+                                                        <p class="m-0 ms-2 fw-semibold text-dark">Fat</p>
+                                                    </div>
+                                                    <div class="" id="fat">
+                                                        <h3 class="fw-bold fs-5 m-0">32g</h3>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div
+                                                    class="bg-secondary bg-opacity-10 rounded-3 px-3 py-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <span
+                                                            class="d-flex align-items-center justify-content-center bg-success bg-opacity-10 circle-40 rounded-4">
+                                                            <i class="fa-solid fa-seedling text-success"></i>
+                                                        </span>
+                                                        <p class="m-0 ms-2 fw-semibold text-dark">Fiber</p>
+                                                    </div>
+                                                    <div class="" id="fiber">
+                                                        <h3 class="fw-bold fs-5 m-0">8g</h3>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div
+                                                    class="bg-secondary bg-opacity-10 rounded-3 px-3 py-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <span
+                                                            class="d-flex align-items-center justify-content-center bg-danger bg-opacity-25 circle-40 rounded-4">
+                                                            <i class="fa-solid fa-cube text-danger"></i>
+                                                        </span>
+                                                        <p class="m-0 ms-2 fw-semibold text-dark">Sodium</p>
+                                                    </div>
+                                                    <div class="" id="sodium">
+                                                        <h3 class="fw-bold fs-5 m-0">850g</h3>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="contact-tab-s" role="tabpanel"
+                                    aria-labelledby="contact-tab" tabindex="0">
+
+                                    <div class="">
+                                        <ul class="m-0 p-0 list-unstyled" id="tips">
+                                            <div
+                                                class="bg-warning bg-opacity-10 my-3 px-2 py-3 rounded-3 border-4 border-start border-warning d-flex gap-2 align-items-center">
+                                                <div
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-check text-light fa-xs"></i>
+                                                </div>
+                                                <li>Don't press down on burgers while cooking - keeps them juicy</li>
+                                            </div>
+                                            <div
+                                                class="bg-warning bg-opacity-10 my-3 px-2 py-3 rounded-3 border-4 border-start border-warning d-flex gap-2 align-items-center">
+                                                <div
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-check text-light fa-xs"></i>
+                                                </div>
+                                                <li>Make indent in center to prevent burger from puffing up</li>
+                                            </div>
+                                            <div
+                                                class="bg-warning bg-opacity-10 my-3 px-2 py-3 rounded-3 border-4 border-start border-warning d-flex gap-2 align-items-center">
+                                                <div
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-check text-light fa-xs"></i>
+                                                </div>
+                                                <li>Let patties rest for 2-3 minutes before serving</li>
+                                            </div>
+                                            <div
+                                                class="bg-warning bg-opacity-10 my-3 px-2 py-3 rounded-3 border-4 border-start border-warning d-flex gap-2 align-items-center">
+                                                <div
+                                                    class="p-1 bg-orangr-g circle-10 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-check text-light fa-xs"></i>
+                                                </div>
+                                                <li>Toast buns for better texture and flavor</li>
+                                            </div>
+
+
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-3 ms-3  py-3">
+                            <button
+                                class="bottom-0 btn btn-danger bg-orangr-g rounded-3 px-3 py-2 mb-4 position-absolute btn-sub"
+                                onclick="randomRecipe()">
+                                <i class="fa-solid fa-rotate"></i>
+                                Try Another Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
