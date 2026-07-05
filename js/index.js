@@ -254,7 +254,7 @@ var recipes = [
     name: "Chicken Tacos",
     category: "Mexican",
     level: "Easy",
-    image: "images/tacos.png",
+    image: "images/tacos.avif",
     rating: 4.7,
     reviews: 301,
     description: "Flavorful chicken tacos with fresh toppings",
